@@ -15,6 +15,43 @@
         type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+    <style>
+        /* Reset default margin and padding for the body and html */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ensure the container has no padding or margin */
+        .container {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reset default margin and padding for the <ul> element and move it to the left */
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-position:outside;
+            text-align: left; /* Include the bullet point inside the content box */
+        }
+
+        /* Ensure list items have no additional padding or margin */
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Additional rule to override any other conflicting styles */
+        .container ul {
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+        }
+        .align-left {
+            padding-left: 0;
+            margin-left: 0;
+        }
+    </style>
     <!-- FontAwesome JS -->
     <script defer src="assets/fontawesome/js/all.js"></script>
 
@@ -81,7 +118,14 @@
                                     </a>
                                     
                                 </div>
-                                <h3 class="title mb-3"><a href="#" target="_blank">N-Queens Solver</a></h3>
+                                <h3 class="title mb-3"><a href="#" target="_blank">N-Queens Back Tracking Solver Monte Carlo efficiency simulation</a></h3>
+                                <div class="container">
+                                    <ul class="align-left">
+                                        <li>Python</li>
+                                        <li>numpy</li>
+                                        <li>matplotlib</li>
+                                    </ul>
+                                </div>
                                 <div class="desc text-start">
                                     <p>The N-Queens Solver is an advanced algorithm implemented in Python to address the classical N-Queens problem. 
                                         This solution employs Monte Carlo simulations to efficiently manage large instances, such as the 12-queens problem, 
